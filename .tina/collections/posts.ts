@@ -2,6 +2,7 @@ const posts =     {
   label: "Blog Posts",
   name: "post",
   path: "content/post",
+  format: "mdx",
   fields: [
     {
       type: "string",
@@ -9,13 +10,10 @@ const posts =     {
       name: "title",
     },
     {
-      type: "string",
+      type: "rich-text",
       label: "Blog Post Body",
       name: "body",
       isBody: true,
-      ui: {
-        component: "textarea",
-      },
     },
   ],
   ui: {

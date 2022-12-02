@@ -16,7 +16,7 @@ export default function Home(props) {
   const content = data.page.body;
   return (
     <Layout>
-      <main>
+      <main id="content">
         <Container>
           <TinaMarkdown content={content} />
         </Container>
