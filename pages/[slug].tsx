@@ -2,6 +2,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Layout } from "../components/Layout";
 import { useTina } from "tinacms/dist/react";
 import { client } from "../.tina/__generated__/client";
+import Container from "@components/Layout/Container";
 
 export default function Home(props) {
   // data passes though in production mode and data is updated to the sidebar data in edit-mode
@@ -14,7 +15,11 @@ export default function Home(props) {
   const content = data.page.body;
   return (
     <Layout>
-      <TinaMarkdown content={content} />
+      <main>
+        <Container>
+          <TinaMarkdown content={content} />
+        </Container>
+      </main>
     </Layout>
   );
 }
