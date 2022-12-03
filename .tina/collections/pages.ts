@@ -1,4 +1,7 @@
 import { Collection } from "tinacms";
+import {titleSection} from './lib/title-section'
+
+console.log(...titleSection)
 
 const pages: Collection = {
   label: "Page Content",
@@ -6,6 +9,29 @@ const pages: Collection = {
   path: "content/page",
   format: "mdx",
   fields: [
+    ...titleSection,
+    {
+      name: "hero",
+      label: "Hero",
+      type: "object",
+      fields: [
+        {
+          name: "image",
+          label: "Hero Image",
+          type: "image"
+        },
+        {
+          name: "alt",
+          label: "Alternate Text",
+          type: "string"
+        },
+        {
+          name: "content",
+          label: "Content",
+          type: "rich-text",
+        }
+      ],
+    },
     {
       name: "body",
       label: "Main Content",
