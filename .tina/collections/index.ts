@@ -4,6 +4,8 @@ import taxonomies from './taxonomy'
 import menus from "./menus"
 import settings from "./settings"
 
+export * as settings from "./settings"
+
 const collections = [
   posts,
   pages,

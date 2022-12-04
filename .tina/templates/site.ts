@@ -8,6 +8,16 @@ export default {
       label: "Site Name"
     },
     {
+      type: "image",
+      name: "logo",
+      label: "Logo",
+    },
+    {
+      type: "boolean",
+      name: "showName",
+      label: "Show site name in header",
+    },
+    {
       type: "string",
       name: "description",
       label: "Description",

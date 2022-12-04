@@ -3,7 +3,9 @@ import { Layout } from "../components/Layout";
 import { useTina } from "tinacms/dist/react";
 import { client } from "../.tina/__generated__/client";
 import Container from "@components/Layout/Container";
+import Hero from "@components/Layout/Hero";
 import { useTheme } from "@hooks/index"
+import Prose from "@components/Layout/Prose";
 
 export default function Home(props) {
   // data passes though in production mode and data is updated to the sidebar data in edit-mode
@@ -14,11 +16,13 @@ export default function Home(props) {
   });
 
   const content = data.page.body;
+
   return (
     <Layout>
       <main id="content">
+        <Hero page={data.page} />
         <Container>
-          <TinaMarkdown content={content} />
+          <Prose content={content} />
         </Container>
       </main>
     </Layout>

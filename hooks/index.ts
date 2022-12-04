@@ -1,3 +1,4 @@
 export * from "./useTheme"
 
-export default {}
+export default {
+}

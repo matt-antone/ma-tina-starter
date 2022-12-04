@@ -1,0 +1,12 @@
+{
+  "location": [
+    {
+      "street": "123 Any St",
+      "suite": "#607",
+      "city": "Seattle",
+      "state": "Washington",
+      "zipcode": "89121"
+    }
+  ],
+  "_template": "locations"
+}

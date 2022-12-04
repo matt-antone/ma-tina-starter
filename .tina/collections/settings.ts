@@ -1,6 +1,6 @@
 import site from "../templates/site"
 import locations from "../templates/locations"
-import contactInfo from "../templates/locations"
+import contactInfo from "../templates/contact-info"
 
 export default {
   name: 'settings',
