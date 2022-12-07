@@ -1,8 +1,8 @@
-import type { TinaTemplate } from "tinacms";
-import { headingSchema } from "@schema/content/heading";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import type { Template } from "tinacms";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
+import { blockStyleSchema } from "./fields/block-styles";
 import Block from "./Block";
-import LocationsComponent from "@components/custom/Locations";
+// import LocationsComponent from "@components/custom/Locations";
 import Heading from "@components/content/Heading";
 
 export const Locations = (props) => {
@@ -16,12 +16,12 @@ export const Locations = (props) => {
             </Heading>
           </div>
           ) : ''}
-        <LocationsComponent images={true}/>
+        {/* <LocationsComponent images={true}/> */}
     </Block>
   );
 };
 
-export const locationsBlockSchema:TinaTemplate = {
+export const locationsBlockSchema:Template = {
   name: "locations",
   label: "Locations",
   ui: {

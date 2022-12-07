@@ -1,6 +1,6 @@
 import themes from "./_block-themes"
-import { Container } from "@components/layout/Container"
-import { Section } from "@components/layout/Section"
+import Container from "@components/Layout/Container"
+import Section from "@components/Layout/Section"
 
 type Props = {
   data

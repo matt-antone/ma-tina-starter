@@ -1,14 +1,14 @@
-import type { TinaTemplate } from "tinacms";
-import { Container } from "@components/layout/Container";
-import { Section } from "@components/layout/Section";
+import type { Template } from "tinacms";
+import Container from "@components/Layout/Container";
+import { Section } from "@components/Layout/Section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import htmlComponents from "../content";
 import themes from "./_block-themes";
 import { templateFields, templates } from "@components/content/templates";
 import Heading from "@components/content/Heading";
-import { headingSchema } from "@schema/content/heading";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
 import Message from "@components/ui/Message";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import { blockStyleSchema } from "./fields/block-styles";
 import Block from "./Block";
 
 export const Grid = (props) => {
@@ -46,7 +46,7 @@ export const Grid = (props) => {
   );
 };
 
-export const gridBlockSchema: TinaTemplate = {
+export const gridBlockSchema: Template = {
   label: "Grid",
   name: "grid",
   ui: {

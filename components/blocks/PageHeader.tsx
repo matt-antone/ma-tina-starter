@@ -1,9 +1,9 @@
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import type { TinaTemplate } from "tinacms";
+import type { Template } from "tinacms";
 import htmlComponents from "../content";
 import { templateFields, templates } from "@components/content/templates";
-import { headingSchema } from "@schema/content/heading";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
+import { blockStyleSchema } from "./fields/block-styles";
 import { hasContent } from "@lib/content"
 import Heading from "@components/content/Heading";
 import Message from "@components/ui/Message";
@@ -35,7 +35,7 @@ export const PageHeader = (props) => {
   );
 };
 
-export const pageHeaderBlockSchema:TinaTemplate = {
+export const pageHeaderBlockSchema:Template = {
   name: "pageheader",
   label: "PageHeader",
   ui: {

@@ -1,16 +1,16 @@
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import type { TinaTemplate } from "tinacms";
+import type { Template } from "tinacms";
 import htmlComponents from "../content";
 import { templateFields, templates } from "@components/content/templates";
-import { headingSchema } from "@schema/content/heading";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
+import { blockStyleSchema } from "./fields/block-styles";
 import { hasContent } from "@lib/content"
 import Heading from "@components/content/Heading";
 import Message from "@components/ui/Message";
 import Block from './Block'
-import Image from "@components/Image";
-import image from "@schema/field-modules/image";
-import aspect from '@schema/field-modules/apscect-ratio'
+ import Image from "@components/CloudImage";
+import image from "@tinaconfig/field-templates/image";
+import aspect from '@tinaconfig/field-templates/apscect-ratio'
 
 export const SectionSummary = (props) => {
   const { data: { heading, body, image, alignment, prose, textAlign, theme, alignRight, responsive } } = props
@@ -91,7 +91,7 @@ export const SectionSummary = (props) => {
   );
 };
 
-export const sectionSummarySchema: TinaTemplate = {
+export const sectionSummarySchema: Template = {
   name: "sectionSummary",
   label: "Section Summary",
   ui: {

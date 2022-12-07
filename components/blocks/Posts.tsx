@@ -1,8 +1,8 @@
-import type { TinaTemplate } from "tinacms";
+import type { Template } from "tinacms";
 import Heading from "@components/content/Heading";
 import themes from "./_block-themes"
-import { headingSchema } from "@schema/content/heading";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
+import { blockStyleSchema } from "./fields/block-styles";
 import Block from './Block';
 import algoliasearch from 'algoliasearch/lite';
 import {
@@ -75,7 +75,7 @@ export const Posts = (props) => {
   );
 };
 
-export const postsBlockSchema: TinaTemplate = {
+export const postsBlockSchema: Template = {
   name: "posts",
   label: "Recent Posts",
   ui: {

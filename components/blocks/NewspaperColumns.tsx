@@ -1,14 +1,14 @@
-import { Container } from "@components/layout/Container";
-import { Section } from "@components/layout/Section";
+import Container from "@components/Layout/Container";
+import { Section } from "@components/Layout/Section";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import type { TinaTemplate } from "tinacms";
+import type { Template } from "tinacms";
 import contentComponents from "../content";
 import Heading from "@components/content/Heading";
 import themes from "./_block-themes";
-import { headingSchema } from "@schema/content/heading";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
 import { hasContent } from "@lib/content";
 import Message from "@components/ui/Message";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import { blockStyleSchema } from "./fields/block-styles";
 import Block from "./Block";
 
 export const NewsColumns =(props) => {
@@ -38,7 +38,7 @@ export const NewsColumns =(props) => {
   );
 };
 
-export const newsColumnsBlockSchema: TinaTemplate = {
+export const newsColumnsBlockSchema: Template = {
   name: "newsColumns",
   label: "News Columns",
   ui: {

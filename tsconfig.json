@@ -5,7 +5,9 @@
     "paths": {
       "@components/*": ["components/*"],
       "@content/*": ["content/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@lib/*": ["lib/*"],
+      "@tinaconfig/*": [".tina/*"],
     },
     "lib": [
       "dom",

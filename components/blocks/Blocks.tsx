@@ -1,4 +1,4 @@
-import type { Page } from "@.tina/__generated__/types";
+import type { Page } from ".tina/__generated__/types";
 import { Content } from "@components/blocks/Content";
 import { Hero } from "@components/blocks/Hero";
 import { Testimonial } from "@components/blocks/Testimonial-block";
@@ -9,11 +9,6 @@ import CallToAction from "./CallToAction";
 import { SectionSummary } from "./SectionSummary"
 import { PageHeader } from "./PageHeader";
 import { Locations } from "./Locations";
-import PracticeAreaList from "../custom/PracticeAreasList";
-import AlgoliaSearch from "../custom/AlgoliaSearch"
-import RelatedAttorneys from "@components/custom/RelatedAttorneys";
-import RelatedNews from "@components/custom/RelatedNews";
-import { ImageTestimonial } from "@components/custom/ImageTestimonial";
 
 export const Blocks = (props) => {
   return (
@@ -22,51 +17,6 @@ export const Blocks = (props) => {
         ? props.blocks.map(function (block, i) {
             // console.log(block.__typename)
             switch (true) {
-              case block.__typename.includes("BlocksImageTestimonial"):
-                return (
-                  <div
-                    data-tinafield={`blocks.${i}`}
-                    key={i + block.__typename}
-                  >
-                  <ImageTestimonial data={block} parentField={`blocks.${i}`} page={props.page || null}/>
-                  </div>
-                )
-              case block.__typename.includes("BlocksRelatednews"):
-                return (
-                  <div
-                    data-tinafield={`blocks.${i}`}
-                    key={i + block.__typename}
-                  >
-                  <RelatedNews data={block} parentField={`blocks.${i}`} page={props.page || null}/>
-                  </div>
-                )
-              case block.__typename.includes("BlocksRelatedattorneys"):
-                return (
-                  <div
-                    data-tinafield={`blocks.${i}`}
-                    key={i + block.__typename}
-                  >
-                  <RelatedAttorneys data={block} parentField={`blocks.${i}`} page={props.page || null}/>
-                  </div>
-                )
-              case block.__typename.includes("BlocksPracticearealist"):
-                return (
-                  <div
-                    data-tinafield={`blocks.${i}`}
-                    key={i + block.__typename}
-                  >
-                    <AlgoliaSearch data={block} parentField={`blocks.${i}`} />
-                  </div>
-                )
-              case block.__typename.includes("BlocksAlgolia"):
-                return (
-                  <div
-                    data-tinafield={`blocks.${i}`}
-                    key={i + block.__typename}
-                  >
-                    <AlgoliaSearch data={block} parentField={`blocks.${i}`} />
-                  </div>
-                )
               case block.__typename.includes("BlocksLocations"):
                 return (
                   <div

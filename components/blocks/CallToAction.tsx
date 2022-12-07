@@ -1,8 +1,8 @@
-import { Section } from "@components/layout/Section";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import { Section } from "@components/Layout/Section";
+import { blockStyleSchema } from "./fields/block-styles";
 import themes from './_block-themes';
 import Link from "next/link";
-import type { TinaTemplate } from "tinacms";
+import type { Template } from "tinacms";
 import Block from "./Block";
 
 const CallToAction = (props) => {
@@ -19,7 +19,7 @@ const CallToAction = (props) => {
 
 export default CallToAction;
 
-export const callToActionBlockSchema: TinaTemplate = {
+export const callToActionBlockSchema: Template= {
   name: "callToAction",
   label: "Call to Action",
   ui: {

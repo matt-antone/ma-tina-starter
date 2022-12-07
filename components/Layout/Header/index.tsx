@@ -1,4 +1,4 @@
-import Container from "../Container"
+import Container from "@components/Layout/Container"
 import Link from "next/link"
 import useSettings from "@hooks/useSettings"
 import CloudImage from "@components/CloudImage"
@@ -7,6 +7,7 @@ type Props = {}
 
 const Header = (props: Props) => {
   const settings = useSettings()
+
   return (
     <header className="py-12">
       <Container>

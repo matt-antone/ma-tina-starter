@@ -1,13 +1,13 @@
-import { Container } from "@components/layout/Container";
-import { Section } from "@components/layout/Section";
-import type { TinaTemplate } from "tinacms";
-import Image from "@components/Image";
+import Container from "@components/Layout/Container";
+import { Section } from "@components/Layout/Section";
+import type { Template } from "tinacms";
+import Image from "@components/CloudImage";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import { headingSchema } from "@schema/content/heading";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
 import Heading from "@components/content/Heading";
-import image from "@schema/field-modules/image";
-import aspect from '@schema/field-modules/apscect-ratio'
-import imageResponsive from "@schema/field-modules/image-responsive"
+import image from "@tinaconfig/field-templates/image";
+import aspect from '@tinaconfig/field-templates/apscect-ratio'
+import imageResponsive from "@tinaconfig/field-templates/image-responsive"
 
 export const Hero = ({ data, parentField }) => {
   //console.log(data.responsive)
@@ -62,7 +62,7 @@ export const Hero = ({ data, parentField }) => {
   )
 }
 
-export const heroBlockSchema: TinaTemplate = {
+export const heroBlockSchema: Template = {
   name: "hero",
   label: "Hero",
   ui: {
@@ -117,7 +117,6 @@ export const heroBlockSchema: TinaTemplate = {
       type: "string",
       list: true,
       ui: {
-        default: "default",
         component: "select"
       },
       options: [

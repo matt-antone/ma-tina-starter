@@ -1,6 +1,6 @@
-import type { TinaTemplate } from "tinacms";
-import { headingSchema } from "@schema/content/heading";
-import { blockStyleSchema } from "@schema/blocks/block-styles";
+import type { Template } from "tinacms";
+import { headingSchema } from "@tinaconfig/field-templates/heading";
+import { blockStyleSchema } from "./fields/block-styles";
 import Block from "./Block";
 
 export const Testimonial = (props) => {
@@ -31,7 +31,7 @@ export const Testimonial = (props) => {
   );
 };
 
-export const testimonialBlockSchema: TinaTemplate = {
+export const testimonialBlockSchema: Template = {
   name: "testimonial",
   label: "Testimonial",
   ui: {

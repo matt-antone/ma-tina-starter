@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Header from '@components/Layout/Header'
-import Container from '@components/Layout/Container'
 import Footer from '@components/Layout/Footer'
 import React, { useRef } from 'react'
-import Link from 'next/link'
+
 type Props = {
   children: React.ReactNode
 }

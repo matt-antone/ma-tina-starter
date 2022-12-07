@@ -6,6 +6,8 @@ type Props = {
   height: number,
   alt: string,
   className?: string,
+  priority?: boolean,
+  quality?: number
 }
 
 const CloudImage = (props: Props) => {
