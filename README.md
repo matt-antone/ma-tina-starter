@@ -41,4 +41,4 @@ To learn more about Tina, take a look at the following resources:
 
 You can check out [Tina Github repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
 
-## [Deploy on Vercel](https://tina.io/guides/tina-cloud/add-tinacms-to-existing-site/deployment/)
+## [Deploy on Vercel](https://vercel.com/new/clone?demo-image=https%3A%2F%2Fapp.tina.io%2Fimages%2Fbarebones-starter.png&demo-title=Barebones%20Starter&demo-url=https%3A%2F%2Fgithub.com%2Fmatt-antone%2Fma-tina-starter&repository-name=barebones-starter&project-name=barebones-starter&redirect-url=https%3A%2F%2Fapp.tina.io%2Fprojects%2Fstarter&demo-description=Minimal%20Next.js%20Tina%20powered%20site%2C%20perfect%20to%20start%20building.&repository-url=https%3A%2F%2Fgithub.com%2Ftinacms%2Ftina-barebones-starter&integration-ids=oac_16ZYZ0RVRarpKj9Ninm5WkbR)
