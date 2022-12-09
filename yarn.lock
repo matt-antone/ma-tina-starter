@@ -1005,10 +1005,17 @@
   dependencies:
     tslib "^2.4.0"
 
-"@headlessui/react@1.4.1", "@headlessui/react@1.6.6", "@headlessui/react@^1.5.0":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.4.1.tgz#0a8dbb20e1d63dcea55bfc3ab1b87637aaac7777"
-  integrity sha512-gL6Ns5xQM57cZBzX6IVv6L7nsam8rDEpRhs5fg28SN64ikfmuuMgunc+Rw5C1cMScnvFM+cz32ueVrlSFEVlSg==
+"@headlessui/react@1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.6.6.tgz#3073c066b85535c9d28783da0a4d9288b5354d0c"
+  integrity sha512-MFJtmj9Xh/hhBMhLccGbBoSk+sk61BlP6sJe4uQcVMtXZhCgGqd2GyIQzzmsdPdTEWGSF434CBi8mnhR6um46Q==
+
+"@headlessui/react@^1.5.0":
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.5.tgz#c8864b0731d95dbb34aa6b3a60d0ee9ae6f8a7ca"
+  integrity sha512-UZSxOfA0CYKO7QDT5OGlFvesvlR1SKkawwSjwQJwt7XQItpzRKdE3ZUQxHcg4LEz3C0Wler2s9psdb872ynwrQ==
+  dependencies:
+    client-only "^0.0.1"
 
 "@headlessui/react@^1.7.4":
   version "1.7.4"
@@ -1860,13 +1867,6 @@
   integrity sha512-nMRpC8FEl2ZDC3+0d+rTGCLi6taYdDHOiwvXHnt2j+eVneWKX1gyiLpDp7aHqzvIvDG6UFMXCs5IOeG+fIjPiQ==
   dependencies:
     isomorphic-fetch "^3.0.0"
-
-"@tinacms/schema-tools@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-1.0.0.tgz#bb9e16b4cb759350afd7237e6f41a7b6f0539326"
-  integrity sha512-HxHSETe7ugz6C1Vb3iWtIy4c5muAj7MuDoEE7wQuoi0/JjHlIRmipgaQTmTbsqnq4Fry65mZ9c5rBY+1fPoG1w==
-  dependencies:
-    zod "^3.14.3"
 
 "@tinacms/schema-tools@1.0.2":
   version "1.0.2"
