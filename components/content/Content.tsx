@@ -1,4 +1,4 @@
-import htmlComponents from "../content";
+import htmlComponents from ".";
 import { templates } from "@components/content/templates";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 // import themes from './_block-themes';

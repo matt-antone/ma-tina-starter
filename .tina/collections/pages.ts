@@ -6,7 +6,7 @@ console.log(...titleSection)
 const pages: Collection = {
   label: "Page Content",
   name: "page",
-  path: "content/page",
+  path: "content/pages",
   format: "mdx",
   fields: [
     ...titleSection,
